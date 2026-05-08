@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/lamassu",
     "maintainers": [
       {
@@ -16,110 +16,317 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "lamassu",
-    "name": "Lamassu - Guardian Spirits of Mesopotamia",
-    "aliases": [],
+    "name": "Lamassu",
+    "aliases": [
+      { "name": "Lamma", "language": "Sumerian", "meaning": "early-period name of the protective female deity" },
+      { "name": "Aladlammû", "language": "Akkadian", "meaning": "winged-bull / guardian spirit, used interchangeably with lamassu in Assyrian contexts" },
+      { "name": "Shedu", "language": "Akkadian", "meaning": "male counterpart / paired guardian spirit" },
+      { "name": "𒀭𒆗", "language": "Akkadian (cuneiform)", "meaning": "AN.KAL, written form of lamassu" }
+    ],
     "category": "MYTHOLOGICAL_CREATURE",
-    "subcategory": "Unknown",
+    "subcategory": "Mesopotamian protective deity / hybrid colossus",
     "tags": [
-      "in-mesopotamia\"-(2002)"
+      "mesopotamia",
+      "assyria",
+      "sumer",
+      "akkadian",
+      "guardian-deity",
+      "hybrid-creature",
+      "winged-bull",
+      "winged-lion",
+      "ancient-near-east"
     ],
     "status": "documented",
     "description": {
-      "summary": "Lamassu (also spelled Lammasu, Lumasi, or Shedu) are monumental supernatural beings from ancient Mesopotamian mythology - colossal winged bulls or lions with human heads that served as protective deities and architectural guardians.",
-      "full": "Lamassu (also spelled Lammasu, Lumasi, or Shedu) are monumental supernatural beings from ancient Mesopotamian mythology - colossal winged bulls or lions with human heads that served as protective deities and architectural guardians. Standing at gates of palaces, temples, and cities, these hybrid creatures represented the fusion of human intelligence, animal strength, divine wings, and royal authority. More than mere statues, lamassu were believed to be living spirits that actively protected buildings and their inhabitants from evil forces, disease, and enemy invasion."
+      "summary": "The Lamassu is a Mesopotamian protective deity depicted as a colossal hybrid figure with a human head, the body of a bull or lion and the wings of an eagle. Monumental Assyrian lamassu pairs were placed at city and palace gates from the Neo-Assyrian period.",
+      "full": "Lamassu (Akkadian: 𒀭𒆗 lamassu; earlier Sumerian Lamma) is a tutelary protective deity of ancient Mesopotamian religion. The figure first appears in Sumerian art (c. 2000–1800 BC) as a beneficent goddess in human form. From the Neo-Assyrian period onward, lamassu were depicted as colossal hybrid creatures with a human head (signifying intelligence), the body of a bull or lion (signifying strength) and the wings of an eagle (signifying freedom). Pairs of lamassu were carved in high relief and installed as gate-guardians at the entrances of palaces and cities; many were carved with five legs so that, viewed frontally, the creature appeared to stand still and, viewed from the side, to walk. Major surviving examples come from the Neo-Assyrian capitals at Nimrud, Khorsabad (Dur-Sharrukin) and Nineveh and are today held in the British Museum, the Louvre, the Metropolitan Museum of Art, the Oriental Institute of the University of Chicago and the National Museum of Iraq. Several lamassu, including those at Nineveh and the Mosul Museum, were destroyed by Islamic State (ISIL) in 2015."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Akkadian lamassu (cuneiform 𒀭𒆗), from earlier Sumerian Lamma. The male counterpart is shedu. The compound term aladlammû was also used in Neo-Assyrian inscriptions.",
+      "meaning": "'Protective spirit' / 'tutelary deity'.",
+      "first_use": "Attested in Sumerian art and texts from the Isin-Larsa period (c. 2000–1800 BC). The hybrid winged-bull / winged-lion form is first associated by Assyriologists with the reign of Tiglath-Pileser II (Wikipedia: Lamassu)."
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "MYTHOLOGICAL_CREATURE",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Hybrid guardian deity",
+      "subtype": "Winged bull / winged lion with human head",
+      "variant": "Sumerian → Akkadian → Neo-Assyrian"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "shedu", "name": "Shedu", "relationship": "counterpart", "description": "Male Akkadian guardian spirit paired with the female lamassu" },
+      { "id": "sphinx", "name": "Sphinx", "relationship": "similar", "description": "Egyptian / Greek hybrid guardian creature with human head and lion body" },
+      { "id": "cherub", "name": "Cherub", "relationship": "similar", "description": "Ancient Near Eastern winged guardian figure preserved in Hebrew Bible iconography" },
+      { "id": "gopuram-guardian", "name": "Gate-guardians of Persepolis", "relationship": "regional_variant", "description": "Persian colossal gate-guardian figures at the Gate of All Nations, Persepolis, that draw on Assyrian lamassu form" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 3.0, "max": 5.5, "unit": "meters", "confidence": "medium" },
+      "coloration": ["white limestone (typical)", "alabaster", "originally painted in some examples"],
+      "features": [
+        { "feature": "Human head", "description": "A bearded human head, generally male in Assyrian examples, wearing a horned tiara denoting divinity", "frequency": "always" },
+        { "feature": "Bull or lion body", "description": "Body of either a bull (most Khorsabad/Nimrud examples) or a lion (Nineveh and other examples)", "frequency": "always" },
+        { "feature": "Eagle's wings", "description": "Pair of large outspread wings rising above the back", "frequency": "always" },
+        { "feature": "Five legs", "description": "In Neo-Assyrian gate-guardian pairs, the figure is carved with five legs so that it appears to stand from the front and walk in profile", "frequency": "common" },
+        { "feature": "Horned tiara", "description": "Multi-tiered horned headdress denoting divine status in the Mesopotamian iconographic system", "frequency": "always" }
+      ],
+      "morphology": "Monumental composite stone sculpture in high relief — a 'double-aspect' figure designed to be read both frontally (standing) and laterally (walking) at the entrances of palaces and cities."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Apotropaic protection", "description": "Function as guardian spirits warding off evil and chaos at the boundaries of city and palace", "frequency": "always", "evidence_level": "documented" },
+      { "ability": "Royal legitimation", "description": "By the Neo-Assyrian period, lamassu pairs at palace gates served as visible markers of royal power and divine sanction of the king", "frequency": "always", "evidence_level": "documented" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "variable",
+      "disposition": "neutral",
+      "social_structure": "pair",
+      "habitat_preference": ["palace gateways", "city gates", "throne-room entrances"],
+      "diet": "Not applicable (deity / sculptural figure)",
+      "patterns": [
+        "Installed in mirrored pairs flanking entrances",
+        "Oriented to face the visitor on approach",
+        "Inscribed with apotropaic and royal-titulary cuneiform texts on body and between legs"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Originally an artistic and religious tradition of southern Mesopotamia (Sumer / Akkad); reaches its monumental culmination in the Neo-Assyrian Empire of the 9th–7th centuries BC, with examples from Nimrud, Khorsabad and Nineveh in present-day Iraq. The form was subsequently absorbed by the Achaemenid Persian Empire (Persepolis).",
+      "continents": ["Asia"],
+      "countries": ["Iraq", "Iran"],
+      "regions": ["Mesopotamia", "Assyria", "Achaemenid Persia"]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Nimrud (Kalhu)",
+        "location": {
+          "description": "Northwest Palace of Ashurnasirpal II, ancient Kalhu",
+          "country": "Iraq",
+          "region": "Nineveh Governorate"
+        },
+        "peak_period": "9th century BC",
+        "notes": "Ashurnasirpal II's Northwest Palace yielded numerous lamassu pairs; many examples are now in the British Museum and the Metropolitan Museum of Art."
+      },
+      {
+        "name": "Dur-Sharrukin (Khorsabad)",
+        "location": {
+          "description": "Palace of Sargon II, founded as a new capital",
+          "country": "Iraq",
+          "region": "Nineveh Governorate"
+        },
+        "peak_period": "c. 717–706 BC",
+        "notes": "Sargon II's monumental palace produced some of the largest known lamassu, examples of which are held in the Louvre, the Oriental Institute (Chicago) and the Iraq Museum."
+      },
+      {
+        "name": "Nineveh",
+        "location": {
+          "description": "Capital of the Neo-Assyrian Empire under Sennacherib and Ashurbanipal",
+          "country": "Iraq",
+          "region": "Nineveh Governorate"
+        },
+        "peak_period": "8th–7th century BC",
+        "notes": "Lamassu from Nineveh and from the Mosul Museum's Ninevite collection were destroyed by ISIL in 2015."
+      },
+      {
+        "name": "Persepolis (Gate of All Nations)",
+        "location": {
+          "description": "Achaemenid Persian ceremonial capital",
+          "country": "Iran",
+          "region": "Fars Province"
+        },
+        "peak_period": "6th–5th century BC",
+        "notes": "Achaemenid monumental gate-guardian bulls explicitly deploy the Assyrian lamassu form."
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "c. 2000 BC",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Isin-Larsa-period Sumerian art (c. 2000–1800 BC), per Wikipedia"
+      },
+      "peak_activity_periods": [
+        { "period": "9th–7th century BC", "description": "Neo-Assyrian peak: monumental lamassu pairs at Nimrud, Khorsabad and Nineveh." },
+        { "period": "6th–5th century BC", "description": "Achaemenid Persian deployment of the form at Persepolis." }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Mesopotamian tutelary-deity tradition. The earliest lamassu (Sumerian Lamma) appears as a fully human female protective deity; the hybrid winged-bull / winged-lion form is an Assyrian development.",
+      "earliest_accounts": "Sumerian-period statuettes and presentation scenes from c. 2000–1800 BC; a Kassite stele dedicated by King Nazi-Maruttash (1307–1282 BC) at Uruk.",
+      "folklore_connections": "Cognate to the broader ancient Near Eastern tradition of hybrid guardian creatures, including the cherubim of the Hebrew Bible and the gate-guardian lions and sphinxes of neighbouring cultures."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "c. 2000–1800 BC", "event": "Sumerian-period (Isin-Larsa) Lamma figures attested as a beneficent female deity in human form", "significance": "Earliest documented form of the lamassu", "source": "Wikipedia: Lamassu" },
+      { "date": "1307–1282 BC", "event": "Kassite-period stele of King Nazi-Maruttash dedicated at Uruk includes lamassu iconography", "significance": "Pre-Assyrian attestation of lamassu in monumental art", "source": "Wikipedia: Lamassu" },
+      { "date": "9th century BC", "event": "Ashurnasirpal II's Northwest Palace at Nimrud (Kalhu) is decorated with monumental lamassu pairs", "significance": "Neo-Assyrian establishment of the colossal-gate-guardian form", "source": "British Museum / Wikipedia: Lamassu" },
+      { "date": "c. 717–706 BC", "event": "Sargon II builds Dur-Sharrukin (modern Khorsabad), decorated with some of the largest known lamassu", "significance": "Maximal scale of the Neo-Assyrian lamassu programme", "source": "Wikipedia: Lamassu; Wikipedia: Dur-Sharrukin" },
+      { "date": "1843", "event": "Paul-Émile Botta begins excavations at Khorsabad, recovering monumental lamassu now in the Louvre", "significance": "Modern rediscovery of Neo-Assyrian lamassu", "source": "Louvre / Wikipedia: Lamassu" },
+      { "date": "2015-02-26", "event": "ISIL militants destroy lamassu and other Assyrian sculptures at the Mosul Museum and at Nineveh", "significance": "Major loss of monumental lamassu in Iraq", "source": "Wikipedia: Lamassu" },
+      { "date": "2018", "event": "Michael Rakowitz's lamassu reconstruction 'The Invisible Enemy Should Not Exist' installed on the Fourth Plinth in Trafalgar Square, London", "significance": "Public art response to the 2015 ISIL destruction", "source": "Wikipedia: Lamassu" }
+    ],
+    "modern_era": "Lamassu sculptures are central holdings of major world museums (British Museum, Louvre, Metropolitan Museum of Art, Oriental Institute of the University of Chicago, Iraq Museum, Istanbul Museum of the Ancient Orient). The figure remains a powerful contemporary symbol of Assyrian cultural identity, used in Assyrian community insignia and invoked in international response to the 2015 ISIL destructions at Nineveh and the Mosul Museum."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
       "verified": 0,
       "disputed": 0,
-      "debunked": 0
+      "debunked": 0,
+      "date_range": { "earliest": "2000 BC", "latest": "modern" }
     },
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
-    "physical": [],
+    "physical": [
+      {
+        "id": "lamassu-evidence-khorsabad-louvre",
+        "type": "monumental sculpture",
+        "name": "Khorsabad lamassu (Louvre)",
+        "date": "c. 717–706 BC",
+        "description": "Pair of colossal limestone lamassu from the palace of Sargon II at Dur-Sharrukin (Khorsabad), excavated in the 1840s and now installed in the Cour Khorsabad of the Louvre in Paris.",
+        "location": "Louvre, Paris (originally Dur-Sharrukin / Khorsabad, Iraq)",
+        "status": "verified",
+        "analysis": "Among the best-preserved monumental Assyrian lamassu; installed as a 'double-aspect' five-legged figure.",
+        "source": "Louvre / Wikipedia: Lamassu"
+      },
+      {
+        "id": "lamassu-evidence-nimrud-met",
+        "type": "monumental sculpture",
+        "name": "Nimrud lamassu (Metropolitan Museum of Art)",
+        "date": "9th century BC",
+        "description": "Colossal human-headed winged lion lamassu from the Northwest Palace of Ashurnasirpal II at Nimrud, now in the Metropolitan Museum of Art, New York.",
+        "location": "Metropolitan Museum of Art, New York (originally Nimrud, Iraq)",
+        "status": "verified",
+        "analysis": "Holds inscribed cuneiform of Ashurnasirpal II between the legs.",
+        "source": "Metropolitan Museum of Art / Wikipedia: Lamassu"
+      },
+      {
+        "id": "lamassu-evidence-khorsabad-oi",
+        "type": "monumental sculpture",
+        "name": "Khorsabad lamassu (Oriental Institute, Chicago)",
+        "date": "c. 717–706 BC",
+        "description": "Colossal lamassu from the palace of Sargon II at Khorsabad, weighing approximately 40 tons and installed in the Oriental Institute Museum of the University of Chicago.",
+        "location": "Oriental Institute of the University of Chicago (originally Dur-Sharrukin / Khorsabad, Iraq)",
+        "status": "verified",
+        "analysis": "Reassembled and conserved at the Oriental Institute; centrepiece of its Assyrian gallery.",
+        "source": "Oriental Institute / Wikipedia: Lamassu"
+      },
+      {
+        "id": "lamassu-evidence-nineveh-destroyed",
+        "type": "monumental sculpture (lost)",
+        "name": "Nineveh and Mosul Museum lamassu destroyed in 2015",
+        "date": "8th–7th century BC; destroyed 2015-02-26",
+        "description": "Lamassu and other Assyrian sculptures at the Mosul Museum and at the Nergal Gate of Nineveh were destroyed by ISIL militants on 26 February 2015.",
+        "location": "Mosul Museum and Nineveh, Iraq",
+        "status": "lost",
+        "analysis": "Loss recorded in the militants' own video and subsequently confirmed by site inspection.",
+        "source": "Wikipedia: Lamassu"
+      }
+    ],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": []
   },
+
   "theories": {
     "paranormal": [],
-    "scientific": [],
+    "scientific": [
+      {
+        "name": "Tutelary-deity interpretation",
+        "description": "Mainstream Assyriology treats the lamassu as a tutelary protective deity in Mesopotamian religion, with a documented evolution from Sumerian Lamma to Neo-Assyrian gate-guardian colossus. Royal inscriptions present the lamassu as both divine protector of the gate and material expression of royal power.",
+        "proponents": ["Mainstream Assyriology", "British Museum, Louvre and Metropolitan Museum curators"],
+        "evidence_cited": ["Cuneiform inscriptions on lamassu bodies and between legs", "Iconographic continuity from Sumer to Achaemenid Persia", "Architectural placement at gateways"]
+      }
+    ],
     "skeptical": []
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Mesopotamian protective-deity tradition (Sumerian Lamma; Akkadian lamassu / shedu / aladlammû)"
+      ],
+      "stories": [
+        "Royal inscriptions of Ashurnasirpal II, Sargon II, Sennacherib and Ashurbanipal invoking lamassu protection at palace gates"
+      ],
+      "beliefs": "Lamassu were understood as benevolent protective spirits who guarded the threshold against evil and chaos and conferred divine sanction on the king."
+    },
+    "indigenous": {
+      "cultures": ["Modern Assyrian Christian community"],
+      "significance": "The lamassu is a major symbol of Assyrian cultural and ethnic identity for the modern Assyrian Christian community of Iraq, Syria, Turkey, Iran and the diaspora.",
+      "sensitivity_note": "The 2015 ISIL destructions of lamassu at Nineveh and the Mosul Museum are an ongoing cultural-heritage trauma for the Assyrian community.",
+      "respect_guidelines": "Use 'Assyrian' (not 'Iraqi' alone) where cultural attribution matters; cite Assyrian community organisations alongside academic sources where appropriate."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
+      "literature": [
+        "Numerous popular accounts of the rediscovery of Assyrian sculpture (Henry Layard's 19th-century accounts)"
+      ],
+      "film_tv": [
+        "Alexander (2004, dir. Oliver Stone) — set design references"
+      ],
       "games": [],
-      "other": []
+      "music": [],
+      "other": [
+        "Used as military insignia by the British 10th Army (WWII), United States Forces – Iraq, and Iranian SAVAK",
+        "Recurring Assyrian-community symbol",
+        "Michael Rakowitz, 'The Invisible Enemy Should Not Exist' (Fourth Plinth, Trafalgar Square, London, 2018–2020)"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Austen Henry Layard", "affiliation": "British Museum (mid-19th century)", "contribution": "Excavated Nimrud (Kalhu) and recovered some of the first Neo-Assyrian lamassu seen in Europe", "period": "1845–1851" },
+      { "name": "Paul-Émile Botta", "affiliation": "French consul / Louvre", "contribution": "Excavated Khorsabad (Dur-Sharrukin) and recovered the Louvre's monumental lamassu", "period": "1843–1855" }
+    ],
+    "organizations": [
+      { "name": "British Museum (Department of the Middle East)", "url": "https://www.britishmuseum.org", "focus": "Curation and study of Neo-Assyrian sculpture, including lamassu from Nimrud" },
+      { "name": "Musée du Louvre (Département des Antiquités orientales)", "url": "https://www.louvre.fr", "focus": "Khorsabad lamassu and the Cour Khorsabad" },
+      { "name": "Metropolitan Museum of Art (Department of Ancient Near Eastern Art)", "url": "https://www.metmuseum.org", "focus": "Nimrud lamassu and Neo-Assyrian galleries" },
+      { "name": "Institute for the Study of Ancient Cultures (formerly Oriental Institute), University of Chicago", "url": "https://isac.uchicago.edu", "focus": "Khorsabad lamassu and Mesopotamian archaeology" }
+    ],
+    "ongoing_studies": "Active research into Neo-Assyrian sculpture, the iconography and inscriptions of lamassu, and conservation following the 2015 destructions; recent work also includes 3D reconstruction projects of damaged Mosul Museum and Nineveh material."
   },
-  "sources": []
+
+  "sources": [
+    {
+      "id": "wikipedia-lamassu",
+      "type": "website",
+      "title": "Lamassu",
+      "publication": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lamassu",
+      "accessed": "2026-05-07"
+    },
+    {
+      "id": "wikipedia-dur-sharrukin",
+      "type": "website",
+      "title": "Dur-Sharrukin",
+      "publication": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dur-Sharrukin",
+      "accessed": "2026-05-07"
+    },
+    {
+      "id": "met-lamassu",
+      "type": "website",
+      "title": "Human-headed winged lion (lamassu)",
+      "publication": "Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search/322609",
+      "accessed": "2026-05-07"
+    }
+  ]
 }
